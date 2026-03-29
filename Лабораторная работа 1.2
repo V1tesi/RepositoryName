@@ -1,0 +1,10 @@
+# TODO Найдите количество книг, которое можно разместить на дискете
+InfVmb=1.44
+Listinbook=100
+strokinlist=50
+kolsyminstrok=25
+bittosym=4
+BookVb= Listinbook*strokinlist*kolsyminstrok*bittosym
+BookVmb= BookVb/(1024*1024)
+KolB= int(InfVmb//BookVmb)
+print("Количество книг, помещающихся на дискету:", KolB)
